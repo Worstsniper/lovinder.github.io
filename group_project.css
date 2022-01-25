@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+img {
+    width: 20%;
+}
+
+a {
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: rgb(255, 249, 249);
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+/* header end here  */
+
+.parallaxone {
+    width: 100%;
+    height: 600px;
+    background-image: url(on-an-island-8-bit-by-1536x864.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallaxone h2 {
+    position: relative;
+    left: 550px;
+    top: 300px;
+    width: 370px;
+    height: 60px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.parallaxtwo {
+    width: 100%;
+    height: 600px;
+    background-image: url(be-mine-couple-4k-ib-1920x1080.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallaxtwo h2 {
+    position: relative;
+    left: 650px;
+    top: 300px;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.para {
+    padding: 50px;
+    text-align: center;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.parallaxthree {
+    width: 100%;
+    height: 600px;
+    background-image: url(young-couple-the-sunset-4k-lx-1920x1080.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallaxthree h2 {
+    position: relative;
+    left: 650px;
+    top: 300px;
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* footer starts here  */
+
+.footer {
+    background-color: black;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/*responsive*/
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
